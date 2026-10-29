@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "GitHub 账号关联",
+    "description": "把当前 DeepSeek 账号与本机 GitHub 身份关联，并让 Agent 通过 github 工具读取仓库、查看和创建 Issue。"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "GitHub Account Link",
+    "description": "Link the current DeepSeek account to a local GitHub identity and let the agent use the github tool to inspect repositories and manage issues."
+  }
+}

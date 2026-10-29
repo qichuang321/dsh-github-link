@@ -1,0 +1,19 @@
+# GitHub account link bundle. The plugin links a GitHub identity to the
+# currently signed-in DeepSeek account inside this DSH profile. It does not
+# modify the official DeepSeek account.
+- insert:
+    - id: github-account-link
+      name: 'dsh-github-link'
+      config:
+        # Optional. Create a GitHub OAuth App with "Device flow" enabled and
+        # paste its Client ID here to enable one-click browser authorization.
+        clientId: ''
+        # Scopes requested by the browser/device flow. The local GitHub CLI
+        # path uses the scopes already granted to `gh`.
+        scopes: 'read:user public_repo'
+        # Allow the `github` agent tool to create issues and comments.
+        allowMutations: true
+        # When true, a successful GitHub CLI login is linked automatically on
+        # plugin start. Explicitly enabled here per the request for automatic
+        # linking; "Disconnect" in Settings opts out until the next manual link.
+        autoLinkGhCli: true
